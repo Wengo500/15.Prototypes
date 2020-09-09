@@ -15,7 +15,7 @@ function Raccoon(...arg) {
 Raccoon.prototype = Object.create(Mammals.prototype);
 Raccoon.prototype.constructor = Raccoon;
 Raccoon.prototype.steal = function(name, amount) {
-    c(`Raccoon stole ${amount} milk`);
+    c(`Raccoon stole ${amount} milk from ${name.name}`);
     this.milk += amount;
     name.milk -= amount;
 };
